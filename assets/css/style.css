@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigations{
+    color: white;
+}
+.navbar-toggler-icon {
+    background-image: none!important;
+    background-color: transparent;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    position: relative;
+    transition: all 0.35s ease-out;
+    transform-origin: center;
+  }
+  
+  .navbar-toggler-icon::before {
+    display: block;
+    background-color: white;
+    height: 3px;
+    content: "";
+    position: relative;
+    top: 5px;
+    transition: all 0.15s ease-out;/*taken down to hide quicker*/
+    transform-origin: center;
+  }
+  
+  .navbar-toggler-icon::after {
+    display: block;
+    background-color: white;
+    height: 3px;
+    content: "";
+    position: relative;
+    top: 18px;
+    transition: all 0.35s ease-out;
+    transform-origin: center;
+  }
+  
+  .navbar-dark .navbar-toggler-icon,
+  .navbar-dark .navbar-toggler-icon::before,
+  .navbar-dark .navbar-toggler-icon::after {
+    background-color: white;
+  }
+.glass{
+  /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.46);
+border-radius: 8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.6px);
+-webkit-backdrop-filter: blur(5.6px);
+padding: 15px 8px;
+}
+.landing_page_sub_btn a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 23px;
+  background: #DF6951;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.landing_page_sub_btn a:hover{
+  text-decoration: none;
+  color: black;
+  padding: 10px 23px;
+  background: transparent;
+  border-radius: 8px;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 992px){
+  .nav_ch{
+    background-color: #353935;
+  }
+}
+.Home_ser_card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: transform .2s;
+  background-color: #DF6951;
+}
+.Home_ser_card:hover{
+  transform: scale(1.03);
+  background-color: black;
+  transition: 0.5s;
+}
+.card_img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
