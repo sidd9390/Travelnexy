@@ -61,6 +61,7 @@ backdrop-filter: blur(5.6px);
 .landing_page_sub_btn{
   margin-top: 10px;
   padding-top: 20px;
+  padding-left: 0;
 }
 .landing_page_sub_btn a{
   text-decoration: none;
