@@ -80,7 +80,7 @@ backdrop-filter: blur(5.6px);
 }
 @media only screen and (max-width: 992px){
   .nav_ch{
-    background-color: #353935;
+    background-color: black;
   }
 }
 .Home_ser_card{
