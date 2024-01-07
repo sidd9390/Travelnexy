@@ -73,7 +73,7 @@ backdrop-filter: blur(5.6px);
 }
 .landing_page_sub_btn a:hover{
   text-decoration: none;
-  color: white;
+  color: #DF6951;
   background: transparent;
   border-radius: 8px;
   transition: 0.5s;
@@ -91,8 +91,9 @@ backdrop-filter: blur(5.6px);
 }
 .Home_ser_card:hover{
   transform: scale(1.03);
-  background-color: rgba(0, 0, 0, 0.574);
+  background-color: rgb(0, 0, 0);
   transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .card_img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
