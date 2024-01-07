@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
 .navigations{
     color: white;
@@ -52,24 +57,26 @@ border-radius: 8px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.6px);
 -webkit-backdrop-filter: blur(5.6px);
-padding: 15px 8px;
+}
+.landing_page_sub_btn{
+  margin-top: 10px;
+  padding-top: 20px;
 }
 .landing_page_sub_btn a{
   text-decoration: none;
   color: white;
-  padding: 10px 23px;
   background: #DF6951;
   border-radius: 8px;
   border: 1px solid transparent;
+  padding: 8px 18px;
 }
 .landing_page_sub_btn a:hover{
   text-decoration: none;
-  color: black;
-  padding: 10px 23px;
+  color: white;
   background: transparent;
   border-radius: 8px;
   transition: 0.5s;
-  border: 1px solid black;
+  border: 1px solid #DF6951;
 }
 @media only screen and (max-width: 992px){
   .nav_ch{
