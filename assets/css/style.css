@@ -166,3 +166,7 @@ backdrop-filter: blur(5.6px);
   text-decoration: none;
   color: #DF6951;
 }
+.bgcolornav{
+  background-color: black;
+  transition: 0.8s;
+}
