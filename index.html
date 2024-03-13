@@ -43,7 +43,7 @@
       .wrapper .track {
         display: flex;
         width: calc(150px * 10);
-        animation: scroll 15s 0.5s linear infinite;
+        animation: scroll 40s 0.5s linear infinite;
       }
     
     
@@ -132,7 +132,7 @@
     
     <body>
     <nav class="navbar navbar-expand-lg position-fixed nav_ch p-0 d-flex flex-column"
-      style="z-index: 200; width: 100%; background-color: white; border-bottom: 0.5px solid gray;">
+      style="z-index: 200; width: 100%; background-color: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
       <div class="container p-2" style="border-bottom: 0.5px solid black;">
         <a class="navbar-brand p-0" href="./index.html">
           <img src="./assets/Images/logo 1.png" class="img-fluid p-0" alt="logo" style="width: 100px;">
@@ -141,7 +141,7 @@
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center navigations" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end navigations" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item pe-4">
                   <a class="nav-link active fw-bold" aria-current="page" href="./index.html" style="color: black;">Home</a>
@@ -327,7 +327,7 @@
           <a href="#home">Travel Insurance</a>
         </div>
         </nav>
-    <section class="landing_page" id="landing_page">
+    <section class="landing_page" id="landing_page" style="position: relative;">
       <div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -417,6 +417,8 @@
                                     </div>
         </div>
         </div>
+
+        <img src="./assets/Images/effect (1).png" class="img-fluid w-100" style="position: absolute; bottom: 0px; object-fit: cover;" alt="">
         </section>
         
         
@@ -539,7 +541,7 @@
       </div>
     <section>
       <div class="container mt-5 mb-5" style="position: relative;">
-        <h1 class="display-5 text-center fw-semibold Main_headings">We Offer Best Services</h1>
+        <h1 class="display-5 text-center fw-semibold Main_headings" style="color: #DF6951;">We Offer Best Services</h1>
         <div class="services">
           <div class="mt-5 row service">
             <div class="col-3 d-flex justify-content-center p-3">
@@ -548,7 +550,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_1.png" alt="img" class="img-fluid p-2 " style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Domestic & International Flight Ticketing
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
                   </p>
                   <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
                     specific needs and preferences.</p>
@@ -561,7 +563,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_2.png" alt="img" class="img-fluid p-2 " style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Domestic & International Holidays Packages 
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Holidays Packages 
                   </p>
                   <p class="m-0">Crafted packages blend accommodations, activities, and travel for unforgettable domestic and
                     international journeys.</p>
@@ -574,7 +576,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_3.png" alt="img" class="img-fluid p-2 " style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Destination Weddings & Visas Services
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Destination Weddings & Visas Services
                   </p>
                   <p class="m-0">Effortlessly plan your dream destination wedding with our comprehensive, seamless visa assistance for a
                     magical celebration abroad.</p>
@@ -587,7 +589,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_4.png" alt="img" class="img-fluid p-2 " style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Hotel Reservation & Cruise Services
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Hotel Reservation & Cruise Services
                   </p>
                   <p class="m-0">Secure worldwide accommodations with our tailored hotel reservation for a comfortable stay within your
                     budget and preferences.</p>
@@ -604,7 +606,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_5.png" alt="img" class="img-fluid p-2" style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Transportation
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Transportation
   
                   </p>
                   <p class="m-0">
@@ -618,7 +620,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_6.png" alt="img" class="img-fluid p-2" style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Travel Insurance 
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Travel Insurance 
                   </p>
                   <p class="m-0">Insurance coverage for your travel needs and peace of mind.</p>
                 </div>
@@ -630,7 +632,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_7.png" alt="img" class="img-fluid p-2" style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Guided Tours
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Guided Tours
                   </p>
                   <p class="m-0">Structured tours led by knowledgeable guides for immersive travel experiences.</p>
                 </div>
@@ -642,7 +644,7 @@
                   <div style="height: 6rem;" class="d-flex justify-content-center align-items-center  mb-3">
                     <img src="./assets/Images/icon_8.png" alt="img" class="img-fluid p-2" style="width: 5rem; ">
                   </div>
-                  <p class="fw-bold fs-5">Events & Conferences
+                  <p class="fw-bold fs-5" style="color: #DF6951;">Events & Conferences
                   </p>
                   <p class="m-0">Organizing and managing impactful events and professional conferences seamlessly.</p>
                 </div>
@@ -652,7 +654,7 @@
 
         </div>
         <div class="text-center">
-          <a href="#">More Services <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" style="text-decoration: none; color: black;">More Services <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="dec_01">
           <img src="./assets/Images/dec_img.png" class="img-fluid" alt="">
