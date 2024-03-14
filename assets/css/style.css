@@ -9,47 +9,9 @@
 body{
   font-family: "Raleway", sans-serif;
 }
-.navigations{
-    color: white;
-}
-.navbar-toggler-icon {
-    background-image: none!important;
-    background-color: transparent;
-    height: 3px;
-    width: 25px;
-    margin: 5px 0;
-    position: relative;
-    transition: all 0.35s ease-out;
-    transform-origin: center;
-  }
-  
-  .navbar-toggler-icon::before {
-    display: block;
-    background-color: black;
-    height: 3px;
-    content: "";
-    position: relative;
-    top: 5px;
-    transition: all 0.15s ease-out;/*taken down to hide quicker*/
-    transform-origin: center;
-  }
-  
-  .navbar-toggler-icon::after {
-    display: block;
-    background-color: black;
-    height: 3px;
-    content: "";
-    position: relative;
-    top: 18px;
-    transition: all 0.35s ease-out;
-    transform-origin: center;
-  }
-  
-  .navbar-dark .navbar-toggler-icon,
-  .navbar-dark .navbar-toggler-icon::before,
-  .navbar-dark .navbar-toggler-icon::after {
-    background-color: white;
-  }
+
+
+
 .glass{
   /* From https://css.glass */
 /* From https://css.glass */
@@ -68,15 +30,15 @@ backdrop-filter: blur(5.6px);
   text-decoration: none;
   color: white;
   background: #DF6951;
-  border-radius: 8px;
+
   border: 1px solid transparent;
   padding: 8px 18px;
 }
 .landing_page_sub_btn a:hover{
   text-decoration: none;
-  color: #DF6951;
+  color: white;
   background: transparent;
-  border-radius: 8px;
+
   transition: 0.5s;
   border: 1px solid #DF6951;
 }
@@ -86,17 +48,17 @@ backdrop-filter: blur(5.6px);
   }
 }
 .Home_ser_card{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
   transition: transform .2s;
   background-color: whitesmoke;
   color: black;
   cursor: pointer;
 }
 .Home_ser_card:hover{
-  transform: scale(1.03);
+
   background-color: white;
   transition: 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
 }
 .card_img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

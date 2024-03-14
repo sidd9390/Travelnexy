@@ -27,3 +27,40 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+ 
+
+function changeBg()
+{
+  var navbar1 = document.getElementById('naviid_1');
+  var scrollValue = window.scrollY;
+  console.log(scrollValue);
+  if(scrollValue < 70){
+    
+    navbar1.classList.add('bg_ch');
+    navbar1.classList.remove('bg_changed');
+
+    
+    document.getElementById("dis_pl").style.display ="block";
+    document.getElementById("navsp1").style.color ="white";
+    document.getElementById("navsp2").style.color ="white";
+    document.getElementById("navsp3").style.color ="white";
+    document.getElementById("navsp4").style.color ="white";
+    document.getElementById("navsp5").style.color ="white";
+  }
+  else{
+    // navbar.classList.add('bgcolornav');
+    navbar1.classList.remove('bg_ch');
+    navbar1.classList.add('bg_changed');
+
+    document.getElementById("dis_pl").style.display ="none";
+    document.getElementById("navsp1").style.color ="black";
+    document.getElementById("navsp2").style.color ="black";
+    document.getElementById("navsp3").style.color ="black";
+    document.getElementById("navsp4").style.color ="black";
+    document.getElementById("navsp5").style.color ="black";
+  }
+}
+
+window.addEventListener('scroll', changeBg);
+
+
