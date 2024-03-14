@@ -106,7 +106,7 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 160px;
+        min-width: 75%;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
       }
@@ -169,6 +169,33 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         
       }
+      .navbar-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.navbar-nav .dropdown-menu li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.navbar-nav .dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
     
     
     
@@ -203,8 +230,23 @@
                 <li class="nav-item">
                   <a class="nav-link fw-bold me-3" id="navsp5" href="#">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="#"><i class="fa-solid fa-phone-volume fs-5"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">123-456-7890</a></li>
+                    <li><a href="#">098-765-4321</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="#"><i class="fa-regular fa-envelope fs-5"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">example@example.com</a></li>
+                    <li><a href="#">info@example.com</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
+            
           </div>
         </nav>
         <div style="background-color: transparent;" id="dis_pl">
@@ -214,39 +256,18 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-            <div class="dropdown_sec">
-              <button class="dropbtn">Trains
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-            <div class="dropdown_sec">
-              <button class="dropbtn">Buses
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-            <div class="dropdown_sec">
-              <button class="dropbtn">Cabs
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Indio</a>
+                <a href="#">Air India</a>
+                <a href="#">SpiceJet</a>
+                <a href="#">Vistara</a>
+                <a href="#">Air India Express</a>
+                <a href="#">British Airways</a>
+                <a href="#">Swiss</a>
+                <a href="#">Saudia</a>
+                <a href="#">Qatar Airways</a>
+                <a href="#">Aliance Airways</a>
+                <a href="#">American Airlines</a>
+
               </div>
             </div>
             <div class="dropdown_sec">
@@ -254,9 +275,17 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Hotel Sitara</a>
+                <a href="#">Radisson blu plaza hotel</a>
+                <a href="#">Vivanta hotel</a>
+                <a href="#">Hotel Deccan Seria Grand</a>
+                <a href="#">Marigold by green park</a>
+                <a href="#">The Golkonda Hotel</a>
+                <a href="#">Taj Deccan</a>
+                <a href="#">Hotel Akoya</a>
+                <a href="#">Taj Krishna</a>
+                <a href="#">Marrito and Convention</a>
+                <a href="#">Hotel Mercure</a>
               </div>
             </div>
             <div class="dropdown_sec">
@@ -280,6 +309,7 @@
               </div>
             </div>
             <a href="#home">Travel Insurance</a>
+            
           </div>
         </div>
       </div>
@@ -399,7 +429,7 @@
         </div>
         </div>
 
-        <img src="./assets/Images/effect (1).png" class="img-fluid w-100" style="position: absolute; bottom: 0px; object-fit: cover;" alt="">
+        
         </section>
         
         
@@ -522,132 +552,184 @@
       </div>
     <section>
       <div class="container mt-5 mb-5" style="position: relative;">
-        <h1 class="display-5 text-center fw-semibold Main_headings" style="color: #DF6951;">We Offer Best Services</h1>
-        <div class="services d-flex justify-content-center">
-          <div class="mt-5 row service">
+        <h1 class="display-5 text-start fw-semibold Main_headings" style="color: #DF6951;">_We Offer Best Services</h1>
+        <div class="services d-flex justify-content-start">
+          <div class="pt-5 pb-5 row service text-start">
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/travel.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Flight Ticketing</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/laggage_icon.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Holidays</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/hotel_icon.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Hotels & Resorts</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/visa&passport_iocn.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Visas & Passport</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
           </div>
         </div>
-        <div class="services d-flex justify-content-center mt-5">
-          <div class="row service">
+        <div class="services d-flex justify-content-start pb-5">
+          <div class="row service text-start">
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/cruises.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Cruises</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/group_travel.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Group Travel</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/travel_insurance.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Travel Insurance</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <div class="card" style="width: 18rem; border: 0;">
-                <div class="card-body Home_ser_card text-center p-0" style="color: black; border: 0;">
-                  <img src="./assets/Images/img_services_2.png" class="img-fluid" alt="">
-                  <div class="p-3">
-                    <p class="fw-bold fs-5" style="color: #DF6951;">Domestic & International Flight Ticketing
-                    </p>
-                    <p class="m-0">We specialize in seamless flight bookings for domestic and international travel, catering to your
-                      specific needs and preferences.</p>
-                  </div>
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/cruise.png" alt="Avatar" />
                 </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Charter Services</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
               </div>
             </div>
           </div>
 
         </div>
-        <div class="text-center">
+        <div class="services d-flex justify-content-start pb-5">
+          <div class="row service text-start">
+            <div class="col-3 d-flex justify-content-center">
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/events.png" alt="Avatar" />
+                </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Mice & Events</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/corporate.png" alt="Avatar" />
+                </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Corporate / Incentives</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/bus.png" alt="Avatar" />
+                </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Bus</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <div class="card card-custom bg-white border-white border-0">
+                <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+                <div class="card-custom-avatar">
+                  <img class="img-fluid" src="./assets/Images/train.png" alt="Avatar" />
+                </div>
+                <div class="card-body" style="overflow-y: auto">
+                  <h4 class="card-title">Rail</h4>
+                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-center pt-3">
           <a href="#" style="text-decoration: none; color: black;">More Services <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="dec_01">
-          <img src="./assets/Images/dec_img.png" class="img-fluid" alt="">
-        </div>
-        <div class="dec_02">
-          <img src="./assets/Images/dec_2_img.png" class="img-fluid" alt="">
-        </div>
+        
       </div>
     </section>
-<div class="mt-4 mb-4">
+    <div class="mt-4 mb-4">
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators d-none">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -685,135 +767,147 @@
     </div>
   </div>
 </div>
-    <section style="position: relative;">
-      <div class="container mt-5 mb-5">
-        <h1 class="display-5 text-start fw-semibold mb-4">Why Choose Us</h1>
-        <div class="mt-5">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-7 col-12 order-lg-0 order-1">
-              <div class="row d-flex justify-content-center">
-                <div class="col-12">
-                  <div class="row mb-5">
-                    <div class="col-2 d-flex justify-content-center d-lg-block d-none">
-                      <h4 class="display-3 fw-bold p-3 d-flex align-items-center justify-content-center" style="color: #DF6951; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">1</h4>
-                    </div>
-                    <div class="col-lg-10 col-12">
-                      <div>
-                        <h6 class="display-6 fs-4 fw-semibold">Expertise and Experience:</h6>
-                          <p>- We have a team of experienced travel consultants who possess in-depth knowledge about various destinations, enabling us to design unforgettable experiences, With years of experience in the travel industry, we understand the intricacies and challenges of travel planning, allowing us to provide hassle-free travel solutions.
-                          </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-2 d-flex justify-content-center d-lg-block d-none">
-                      <h4 class="display-3 fw-bold p-3 d-flex align-items-center justify-content-center" style="color: #DF6951; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">2</h4>
-                    </div>
-                    <div class="col-lg-10 col-12">
-                      <h6 class="display-6 fs-4 fw-semibold">Personalized Service:
-                      </h6>
-                      <p>- We believe in understanding our customers' preferences and requirements to deliver personalized travel experiences.
-                      </p>
-                      <p>- Our travel experts work closely with clients, ensuring every detail is tailored to their needs, preferences, and budget.
-                      </p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-12 d-flex justify-content-center align-items-center order-lg-1 order-0">
-              <img src="./assets/Images/group_people.jpg" style="border-radius: 5px;" class="img-fluid " alt="">
-            </div>
-          </div>
+    <div class="container">
+      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">Top Indian Destinations</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero ex vitae, porro facilis culpa. Libero porro atque nisi, laudantium odio distinctio praesentium alias. Exercitationem eius obcaecati repellendus omnis doloribus.</p>
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <ul class="image-list p-0 m-0">
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
         </div>
-        <div>
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-5 col-12 d-flex justify-content-center align-items-center">
-              <img src="./assets/Images/group_people.jpg" style="border-radius: 5px;" class="img-fluid d-lg-block d-none" alt="">
-            </div>
-            <div class="col-lg-7 col-12">
-              <div class="row d-flex justify-content-center">
-                <div class="col-12 d-flex align-items-center">
-                  <div class="row mb-5">
-                    <div class="col-2 d-flex justify-content-center d-lg-block d-none">
-                      <h4 class="display-3 fw-bold p-3 d-flex align-items-center justify-content-center" style="color: #DF6951; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">3</h4>
-                    </div>
-                    <div class="col-lg-10 col-12">
-                      <h6 class="display-6 fw-semibold fs-4">Competitive Pricing:</h6>
-                      <p>- We have established strong relationships with travel suppliers, enabling us to offer competitive pricing across our range of services.
-                      </p>
-                      <p>- We strive to provide value for money by offering the best deals, special offers, and promotions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-2 d-flex justify-content-center d-lg-block d-none">
-                      <h4 class="display-3 fw-bold p-3 d-flex align-items-center justify-content-center" style="color: #DF6951; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">4</h4>
-                    </div>
-                    <div class="col-lg-10 col-12">
-                      <h6 class="display-6 fw-semibold fs-4">Customer Support:
-                      </h6>
-                      <p>- We offer Round-the-Clock customer support, ensuring assistance is available throughout the journey.
-                      </p>
-                      <p>- Our dedicated team is available to handle emergencies, last-minute changes, or any travel-related queries promptly.
-                      </p>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<section>
-  <div class="mt-5 mb-5 container-fluid" style="position: relative;">
-    <h1 class="display-5 text-center fw-semibold Main_headings">TravelNexy Specials</h1>
-    <div class="row">
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-12 d-flex align-items-center justify-content-center"
-        style="background-image: url(./assets/Images/travel_spl.webp); background-position: center; background-repeat: no-repeat; background-size: cover; height: 30vh; object-fit: cover;">
-        <h1 class="text-center">Offer</h1>
       </div>
     </div>
 
+    <div class="container mt-5">
+      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">Top International Destinations</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque neque assumenda laboriosam quibusdam accusantium minus laudantium repudiandae ex, accusamus hic dolore eveniet omnis, rem ad placeat voluptatum quas quod.</p>
+      <div class="slider-wrapper1">
+        <button id="prev-slide1" class="slide-button1 material-symbols-rounded">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <ul class="image-list1 m-0 p-0">
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+        </ul>
+        <button id="next-slide1" class="slide-button1 material-symbols-rounded">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slider-scrollbar1">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb1"></div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container mt-5">
+      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">TravelNexy Specials</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem, impedit ullam aut iste, repudiandae rem ratione minima ipsa illum beatae aliquid commodi necessitatibus quidem fugiat vero error velit perferendis.</p>
+      <div class="slider-wrapper2">
+        <button id="prev-slide2" class="slide-button2 material-symbols-rounded">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <ul class="image-list2 p-0 m-0">
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+        </ul>
+        <button id="next-slide2" class="slide-button2 material-symbols-rounded">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slider-scrollbar2">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb2"></div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+<div class="mt-4 mb-4">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="position: relative;">
+        <img src="./assets/Images/img_1.jpg" class="d-block w-100"
+          style="min-height: 100vh; object-fit: cover;" alt="...">
+        <div class="overlay_text text-center"
+          style="position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 100%;">
+          <div>
+          <div class="row d-flex align-items-center m-2">
+          <div class="col-xl-2 col-12 container d-flex justify-content-end">
+          <h1 class="display-4 text-start fw-bold Main_headings" style="color: white;">Why<br> TravelNexy</h1>
+          </div>
+          <div class="col-xl-8 col-12 ">
+            <div class="row d-flex justify-content-center text-start">
+            <div class="col-lg-4 col-12 m-2 p-4" style="background-color: white; color: black;" >
+              <h4 style="color: #DF6951;">
+Expertise and Experience:</h4>
+<p>- We have a team of experienced travel consultants who possess in-depth knowledge about various destinations, enabling us to design unforgettable experiences, With years of experience in the travel industry, we understand the intricacies and challenges of travel planning, allowing us to provide hassle-free travel solutions.
+
+</p>
+            </div>
+            <div class="col-lg-4 col-12 m-2 p-4" style="background-color: white; color: black;">
+            <h4 style="color: #DF6951;">Personalized Service:</h4>
+            <p>- Our travel experts work closely with clients, ensuring every detail is tailored to their needs, preferences, and budget.</p>
+            <h4 style="color: #DF6951;">Competitive Pricing:</h4>
+            <p>- We strive to provide value for money by offering the best deals, special offers, and promotions.</p>
+            <h4 style="color: #DF6951;">Customer Support:</h4>
+            <p>- We offer Round-the-Clock customer support, ensuring assistance is available throughout the journey.</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </div>
-</section>
+</div>
+
+
+
+
+
+
 
 
 <div class="w-100" style="background-color: whitesmoke;">
@@ -823,11 +917,9 @@
       <div class="card-wrapper swiper-wrapper">
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -840,11 +932,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -857,11 +947,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -874,11 +962,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -891,11 +977,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -908,11 +992,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -925,11 +1007,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -942,11 +1022,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -959,11 +1037,9 @@
         </div>
         <div class="card_sli swiper-slide">
           <div class="image-content">
-            <span class="overlay"></span>
+            <img src="./assets/Images/visa_arr.webp" class="img-fluid" alt="">
 
-            <div class="card-image">
-              <img src="./assets/Images/Elon_Musk_2019.jpg" alt="" class="card-img">
-            </div>
+            
           </div>
 
           <div class="card-content">
@@ -977,8 +1053,7 @@
       </div>
     </div>
 
-    <div class="swiper-button-next swiper-navBtn ps-5 ms-5"></div>
-    <div class="swiper-button-prev swiper-navBtn pe-5 me-5"></div>
+
     <div class="swiper-pagination"></div>
   </div>
 </div>
