@@ -207,9 +207,42 @@ window.addEventListener("resize", initSlider1);
 window.addEventListener("load", initSlider1);
 
 
+function fun_flights(){
+    document.getElementById("dom").style.color = "#DF6951";
+    document.getElementById("inter").style.color = "black";
+    document.getElementById("domestic").style.display = "block";
+    document.getElementById("International").style.display = "none";
+}
 
 
 
+function fun_flights2(){
+    document.getElementById("dom").style.color = "black";
+    document.getElementById("inter").style.color = "#DF6951";
+    document.getElementById("domestic").style.display = "none";
+    document.getElementById("International").style.display = "block";
+}
+document.getElementById("dom").addEventListener("click", fun_flights);
+document.getElementById("inter").addEventListener("click", fun_flights2);
+
+
+function india_tour1(){
+    document.getElementById("north").style.color = "#DF6951";
+    document.getElementById("south").style.color = "black";
+    document.getElementById("north_india").style.display = "block";
+    document.getElementById("south_india").style.display = "none";
+}
+
+
+
+function india_tour2(){
+    document.getElementById("north").style.color = "black";
+    document.getElementById("south").style.color = "#DF6951";
+    document.getElementById("north_india").style.display = "none";
+    document.getElementById("south_india").style.display = "block";
+}
+document.getElementById("north").addEventListener("click", india_tour1);
+document.getElementById("south").addEventListener("click", india_tour2);
 
 
 
@@ -287,3 +320,77 @@ window.addEventListener("load", initSlider2);
 
 
 
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  
+    // Change image on selection
+    $("#gallery img").click(function() {
+      // Get current image source
+      var image = $(this).attr("src");
+      // Apply grayscale to thumbnails except selected
+      $("#gallery")
+        .find("img")
+        .css("filter", "grayscale(1)");
+      $(this).css("filter", "none");
+      // Change image
+      $("#gallery-img").css("background-image", "url(" + image + ")");
+      // Apply link to image
+      $("#gallery-link").attr("href", image);
+      // Use id for count
+      $("#count").text($(this).attr("id"));
+    });
+    
+    // Get total number of images
+    var gallerySize = $(".gallery-thumbnails img").length;
+    $("#total").text(gallerySize);
+    
+    var display = $("#imgDisplay");
+    var scroll = $("#imgScroll");
+    var scale = $("#imgScale");
+    
+    // Image display
+    display.change( function() {
+      if(display.val() === "contain") {
+        $("#gallery-img").css("background-size","contain");
+      } else {
+        $("#gallery-img").css("background-size","cover");
+      }
+    });
+    
+    // Scroll
+    scroll.change( function() {
+      if(scroll.val() === "yes") {
+        $("#gallery-box").css("overflow","scroll");
+      } else {
+        $("#gallery-box").css("overflow","hidden");
+      }
+    });
+    
+    // Scale
+    var changeScale = scale.change( function() {
+      $("#gallery-img").css("background-size", scale.val() + "px");
+    });
+  
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

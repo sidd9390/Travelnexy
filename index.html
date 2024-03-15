@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    <style>
       .wrapper {
         background-color: #E1E2E2;
         height: 130px;
@@ -106,7 +109,7 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 75%;
+        min-width: 500px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
       }
@@ -195,6 +198,31 @@
 .navbar-nav .nav-item:hover .dropdown-menu {
   display: block;
 }
+#dom{
+  color: #DF6951;
+}
+#domestic{
+  display: block;
+}
+#International{
+  display: none;
+}
+#inter{
+ color: black;
+}
+
+#north{
+  color: #DF6951;
+}
+#south_india{
+  display: none;
+}
+#north_india{
+  display: block;
+}
+#south{
+ color: black;
+}
 
     
     
@@ -222,19 +250,27 @@
                   <a class="nav-link fw-bold me-3" id="navsp2" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold me-3" id="navsp3" href="#">About</a>
+                  <a class="nav-link fw-bold me-3" id="navsp3" href="./about_us.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold me-3" id="navsp4" href="#">Services</a>
+                  <a class="nav-link fw-bold me-3" id="navsp4" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold me-3" id="navsp5" href="#">Contact</a>
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="./Contact_us.html">Contact</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fw-bold me-3" id="navsp5" href="#"><i class="fa-solid fa-phone-volume fs-5"></i></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu p-3">
+                    <li style="color: #DF6951;"><i class="fa-solid fa-phone"></i> Toll free number</li>
                     <li><a href="#">123-456-7890</a></li>
-                    <li><a href="#">098-765-4321</a></li>
+                    <li style="color: #DF6951;"><i class="fa-solid fa-mobile"></i> You can also call on:</li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li style="color: #DF6951;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</li>
+                    <li><a href="#">+91 8823426834</a></li>
+                    <li style="color: #DF6951;"><i class="fa-regular fa-clock"></i> Business hours</li>
+                    <li><a href="#">10am - 6pm</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -256,17 +292,35 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Indio</a>
-                <a href="#">Air India</a>
-                <a href="#">SpiceJet</a>
-                <a href="#">Vistara</a>
-                <a href="#">Air India Express</a>
-                <a href="#">British Airways</a>
-                <a href="#">Swiss</a>
-                <a href="#">Saudia</a>
-                <a href="#">Qatar Airways</a>
-                <a href="#">Aliance Airways</a>
-                <a href="#">American Airlines</a>
+                <div class="d-flex flex-row" style="border-bottom: 0.5px solid gray;">
+                  <a href="#" id="dom" class="me-2" >Domestic</a> <a href="#" id="inter">International</a></div>
+                <div id="domestic">
+                <a class="m-0 pb-1" href="#">Air India</a>
+                <a class="m-0 pb-1" href="#">Vistara Airlines</a>
+                <a class="m-0 pb-1" href="#">Indigo Airlines</a>
+                <a class="m-0 pb-1" href="#">SpiceJet</a>
+                <a class="m-0 pb-1" href="#">AirAsia India</a>
+                <a class="m-0 pb-1" href="#">Truejet</a>
+                <a class="m-0 pb-1" href="#">FlyBig</a>
+                <a class="m-0 pb-1" href="#">Star Air</a>
+                <a class="m-0 pb-1" href="#">Akasa Air</a>
+                <a class="m-0 pb-1" href="#">Aliance Air</a>
+                </div>
+                <div id="International">
+                <a class="m-0 pb-1" href="#">Air Arabia</a>
+                <a class="m-0 pb-1" href="#">Air France</a>
+                <a class="m-0 pb-1" href="#">Etithad Airlines</a>
+                <a class="m-0 pb-1" href="#">Gulf Air</a>
+                <a class="m-0 pb-1" href="#">Kuwait Airways</a>
+                <a class="m-0 pb-1" href="#">Malaysian Airlines</a>
+                <a class="m-0 pb-1" href="#">Qatar Airways</a>
+                <a class="m-0 pb-1" href="#">Thai Airlines</a>
+                <a class="m-0 pb-1" href="#">Vietnam Airlines</a>
+                <a class="m-0 pb-1" href="#">Oman Air</a>
+                <a class="m-0 pb-1" href="#">Emirates Airlines</a>
+                <a class="m-0 pb-1" href="#">American Airlines</a>
+                </div>
+
 
               </div>
             </div>
@@ -275,17 +329,17 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Hotel Sitara</a>
-                <a href="#">Radisson blu plaza hotel</a>
-                <a href="#">Vivanta hotel</a>
-                <a href="#">Hotel Deccan Seria Grand</a>
-                <a href="#">Marigold by green park</a>
-                <a href="#">The Golkonda Hotel</a>
-                <a href="#">Taj Deccan</a>
-                <a href="#">Hotel Akoya</a>
-                <a href="#">Taj Krishna</a>
-                <a href="#">Marrito and Convention</a>
-                <a href="#">Hotel Mercure</a>
+                <a href="#" class="m-0 pb-1">Hotel Sitara</a>
+                <a href="#" class="m-0 pb-1">Radisson blu plaza hotel</a>
+                <a href="#" class="m-0 pb-1">Vivanta hotel</a>
+                <a href="#" class="m-0 pb-1">Hotel Deccan Seria Grand</a>
+                <a href="#" class="m-0 pb-1">Marigold by green park</a>
+                <a href="#" class="m-0 pb-1">The Golkonda Hotel</a>
+                <a href="#" class="m-0 pb-1">Taj Deccan</a>
+                <a href="#" class="m-0 pb-1">Hotel Akoya</a>
+                <a href="#" class="m-0 pb-1">Taj Krishna</a>
+                <a href="#" class="m-0 pb-1">Marrito and Convention</a>
+                <a href="#" class="m-0 pb-1">Hotel Mercure</a>
               </div>
             </div>
             <div class="dropdown_sec">
@@ -293,9 +347,42 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <div class="d-flex flex-row" style="border-bottom: 0.5px solid gray;">
+                  <a href="#" id="north" class="me-2" >North India</a> <a href="#" id="south">South India</a></div>
+                <div id="north_india">
+                <a class="m-0 pb-1" href="#">Kashmir</a>
+                <a class="m-0 pb-1" href="#">Shimla</a>
+                <a class="m-0 pb-1" href="#">Dharamshala</a>
+                <a class="m-0 pb-1" href="#">Kullu and Manali</a>
+                <a class="m-0 pb-1" href="#">Nainital</a>
+                <a class="m-0 pb-1" href="#">Mussoorie</a>
+                <a class="m-0 pb-1" href="#">Varanasi</a>
+                <a class="m-0 pb-1" href="#">Spiti</a>
+                <a class="m-0 pb-1" href="#">Jodhpur</a>
+                <a class="m-0 pb-1" href="#">Kufri</a>
+                </div>
+                <div id="south_india">
+                <a class="m-0 pb-1" href="#">Hyderabad</a>
+                <a class="m-0 pb-1" href="#">Charminer</a>
+                <a class="m-0 pb-1" href="#">Benguluru</a>
+                <a class="m-0 pb-1" href="#">Belum Caves</a>
+                <a class="m-0 pb-1" href="#">Golconda Fort</a>
+                <a class="m-0 pb-1" href="#">Karnataka</a>
+                <a class="m-0 pb-1" href="#">Mysuru</a>
+                <a class="m-0 pb-1" href="#">Ramoji Film City</a>
+                <a class="m-0 pb-1" href="#">Ooty</a>
+                <a class="m-0 pb-1" href="#">Puducherry</a>
+                <a class="m-0 pb-1" href="#">Araku Valley</a>
+                <a class="m-0 pb-1" href="#">Kodaikanal</a>
+                <a class="m-0 pb-1" href="#">Kerala</a>
+                <a class="m-0 pb-1" href="#">Tirupati</a>
+                <a class="m-0 pb-1" href="#">Munnar</a>
+                <a class="m-0 pb-1" href="#">Kochi</a>
+                <a class="m-0 pb-1" href="#">Wayanad</a>
+                <a class="m-0 pb-1" href="#">Mysore Palace</a>
+                </div>
+
+
               </div>
             </div>
             <div class="dropdown_sec">
@@ -303,9 +390,18 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a class="m-0 pb-1" href="#"></a>
+                <a class="m-0 pb-1" href="#">France</a>
+                <a class="m-0 pb-1" href="#">Spain</a>
+                <a class="m-0 pb-1" href="#">United States</a>
+                <a class="m-0 pb-1" href="#">Turkiye</a>
+                <a class="m-0 pb-1" href="#">Italy</a>
+                <a class="m-0 pb-1" href="#">Mexico</a>
+                <a class="m-0 pb-1" href="#">United Kingdom</a>
+                <a class="m-0 pb-1" href="##">Germany</a>
+                <a class="m-0 pb-1" href="#">Japan</a>
+                <a class="m-0 pb-1" href="#">Vietnam</a>
+                <a class="m-0 pb-1" href="#">Maldives</a>
               </div>
             </div>
             <a href="#home">Travel Insurance</a>
@@ -550,10 +646,10 @@
           </div>
       </div>
       </div>
-    <section>
+    <section style="background-image: url(./assets/Images/services_bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
       <div class="container mt-5 mb-5" style="position: relative;">
-        <h1 class="display-5 text-start fw-semibold Main_headings" style="color: #DF6951;">_We Offer Best Services</h1>
-        <div class="services d-flex justify-content-start">
+        <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">_We Offer Best Services</h1>
+        <div class="services d-flex justify-content-lg-center justify-content-start">
           <div class="pt-5 pb-5 row service text-start">
             <div class="col-3 d-flex justify-content-center">
               <div class="card card-custom bg-white border-white border-0">
@@ -563,7 +659,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Flight Ticketing</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Convenient online booking for domestic and international flights. Competitive prices, reliable service, and seamless travel experience guaranteed."</p>
                 </div>
                 
               </div>
@@ -576,7 +672,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Holidays</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Tailored holiday packages worldwide. Expert guidance, unforgettable experiences, and hassle-free planning for your dream vacation. Book now for adventure!"</p>
                 </div>
                 
               </div>
@@ -589,7 +685,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Hotels & Resorts</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Luxurious accommodations worldwide. Unforgettable experiences, impeccable service, and unmatched comfort. Book your perfect getaway today. Satisfaction guaranteed!"</p>
                 </div>
                 
               </div>
@@ -602,15 +698,15 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Visas & Passport</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Efficient visa and passport services. Streamlined processing, expert assistance, and hassle-free documentation. Your gateway to global travel awaits!"</p>
                 </div>
                 
               </div>
             </div>
           </div>
         </div>
-        <div class="services d-flex justify-content-start pb-5">
-          <div class="row service text-start">
+        <div class="services d-flex justify-content-lg-center justify-content-start pb-5">
+          <div class="row service text-start ">
             <div class="col-3 d-flex justify-content-center">
               <div class="card card-custom bg-white border-white border-0">
                 <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
@@ -619,7 +715,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Cruises</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Exquisite cruise experiences worldwide. Luxury amenities, captivating destinations, and personalized service. Embark on your dream voyage today. Bon voyage!"</p>
                 </div>
                 
               </div>
@@ -632,7 +728,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Group Travel</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Tailored group travel experiences. Seamless coordination, exclusive deals, and unforgettable memories with friends and family. Book your adventure now!"</p>
                 </div>
                 
               </div>
@@ -645,7 +741,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Travel Insurance</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Comprehensive travel insurance coverage. Peace of mind, reliable assistance, and protection for your journey. Safeguard your travels today!"</p>
                 </div>
                 
               </div>
@@ -658,7 +754,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Charter Services</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Customized charter services. Flexible scheduling, personalized experiences, and premium comfort. Elevate your travel with exclusive charter options. Book now!"</p>
                 </div>
                 
               </div>
@@ -666,7 +762,7 @@
           </div>
 
         </div>
-        <div class="services d-flex justify-content-start pb-5">
+        <div class="services d-flex justify-content-lg-center justify-content-start pb-5">
           <div class="row service text-start">
             <div class="col-3 d-flex justify-content-center">
               <div class="card card-custom bg-white border-white border-0">
@@ -676,7 +772,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Mice & Events</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Expert MICE and event management. Tailored solutions, flawless execution, and unforgettable experiences. Elevate your gatherings with our expertise."</p>
                 </div>
                 
               </div>
@@ -689,7 +785,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Corporate / Incentives</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Corporate and incentive travel solutions. Tailored packages, seamless planning, and rewarding experiences for your team. Unlock corporate travel excellence today!"</p>
                 </div>
                 
               </div>
@@ -702,7 +798,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Bus</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Reliable bus transportation services. Comfortable rides, punctual schedules, and affordable fares. Simplify your journey with our trusted bus services."</p>
                 </div>
                 
               </div>
@@ -715,7 +811,7 @@
                 </div>
                 <div class="card-body" style="overflow-y: auto">
                   <h4 class="card-title">Rail</h4>
-                  <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap to align multiple cards nicely in a row.</p>
+                  <p class="card-text">"Efficient rail transportation services. Fast, convenient, and eco-friendly travel options. Experience seamless journeys with our reliable rail services."</p>
                 </div>
                 
               </div>
@@ -767,92 +863,94 @@
     </div>
   </div>
 </div>
-    <div class="container">
-      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">Top Indian Destinations</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero ex vitae, porro facilis culpa. Libero porro atque nisi, laudantium odio distinctio praesentium alias. Exercitationem eius obcaecati repellendus omnis doloribus.</p>
-      <div class="slider-wrapper">
-        <button id="prev-slide" class="slide-button material-symbols-rounded">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <ul class="image-list p-0 m-0">
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
-        </ul>
-        <button id="next-slide" class="slide-button material-symbols-rounded">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="slider-scrollbar">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb"></div>
+    <div style="background-image: url(./assets/Images/3669731_1954046.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="container">
+        <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">Top Indian Destinations</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero ex vitae, porro facilis culpa. Libero porro atque nisi, laudantium odio distinctio praesentium alias. Exercitationem eius obcaecati repellendus omnis doloribus.</p>
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <ul class="image-list p-0 m-0">
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container mt-5">
-      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">Top International Destinations</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque neque assumenda laboriosam quibusdam accusantium minus laudantium repudiandae ex, accusamus hic dolore eveniet omnis, rem ad placeat voluptatum quas quod.</p>
-      <div class="slider-wrapper1">
-        <button id="prev-slide1" class="slide-button1 material-symbols-rounded">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <ul class="image-list1 m-0 p-0">
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
-        </ul>
-        <button id="next-slide1" class="slide-button1 material-symbols-rounded">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="slider-scrollbar1">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb1"></div>
+  
+      <div class="container mt-5">
+        <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">Top International Destinations</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque neque assumenda laboriosam quibusdam accusantium minus laudantium repudiandae ex, accusamus hic dolore eveniet omnis, rem ad placeat voluptatum quas quod.</p>
+        <div class="slider-wrapper1">
+          <button id="prev-slide1" class="slide-button1 material-symbols-rounded">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <ul class="image-list1 m-0 p-0">
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+          </ul>
+          <button id="next-slide1" class="slide-button1 material-symbols-rounded">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider-scrollbar1">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb1"></div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container mt-5">
-      <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951;">TravelNexy Specials</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem, impedit ullam aut iste, repudiandae rem ratione minima ipsa illum beatae aliquid commodi necessitatibus quidem fugiat vero error velit perferendis.</p>
-      <div class="slider-wrapper2">
-        <button id="prev-slide2" class="slide-button2 material-symbols-rounded">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <ul class="image-list2 p-0 m-0">
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
-          <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
-        </ul>
-        <button id="next-slide2" class="slide-button2 material-symbols-rounded">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="slider-scrollbar2">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb2"></div>
+  
+      <div class="container mt-5">
+        <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">TravelNexy Specials</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem, impedit ullam aut iste, repudiandae rem ratione minima ipsa illum beatae aliquid commodi necessitatibus quidem fugiat vero error velit perferendis.</p>
+        <div class="slider-wrapper2">
+          <button id="prev-slide2" class="slide-button2 material-symbols-rounded">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <ul class="image-list2 p-0 m-0">
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-1" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-2" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-3" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-4" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-5" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-6" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-7" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-8" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-9" />
+            <img class="image-item" src="./assets/Images/service_01.jpg" alt="img-10" />
+          </ul>
+          <button id="next-slide2" class="slide-button2 material-symbols-rounded">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider-scrollbar2">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb2"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -873,7 +971,7 @@
           <div>
           <div class="row d-flex align-items-center m-2">
           <div class="col-xl-2 col-12 container d-flex justify-content-end">
-          <h1 class="display-4 text-start fw-bold Main_headings" style="color: white;">Why<br> TravelNexy</h1>
+          <h1 class="display-4 text-start fw-bold Main_headings" style="color: white; font-family: Handlee, cursive;">Why<br> TravelNexy</h1>
           </div>
           <div class="col-xl-8 col-12 ">
             <div class="row d-flex justify-content-center text-start">
@@ -911,7 +1009,7 @@ Expertise and Experience:</h4>
 
 
 <div class="w-100" style="background-color: whitesmoke;">
-  <h1 class="display-5 text-center fw-semibold Main_headings pt-4">Visa on arrival destinations</h1>
+  <h1 class="display-6 text-center fw-semibold Main_headings pt-4" style="color: #DF6951; font-family: Handlee, cursive;">Visa on arrival destinations</h1>
   <div class="slide-container swiper pt-5 pb-5">
     <div class="slide-content">
       <div class="card-wrapper swiper-wrapper">
@@ -923,11 +1021,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">The Maldives</h2>
+            <p class="description">Visa-free. Visa on arrival for 30 days. Explore stunning beaches and underwater beauty.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -938,11 +1035,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Fiji</h2>
+            <p class="description">Visa-free. Visa on arrival available. Discover lush rainforests and pristine coral reefs.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -953,11 +1049,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Sri Lanka</h2>
+            <p class="description">Visa on arrival for most. Experience rich culture and ancient ruins in Sigiriya.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -968,11 +1063,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Seychelles</h2>
+            <p class="description">Visa-free for most. Visa on arrival for 30 days. Enjoy pristine beaches and rare wildlife.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -983,11 +1077,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Bolivia</h2>
+            <p class="description">Visa on arrival for most. Explore the otherworldly landscapes of Salar de Uyuni.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -998,11 +1091,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Cook Islands</h2>
+            <p class="description">Visa-free. Visa on arrival for 31 days. Discover stunning lagoons & vibrant marine life.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -1013,11 +1105,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Indonesia</h2>
+            <p class="description">Visa-free for many. Visa on arrival available. Explore Bali's beaches and cultural richness.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -1028,11 +1119,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Jamaica</h2>
+            <p class="description">Visa-free for most. Visa on arrival available. Enjoy reggae rhythms and pristine beaches.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
         <div class="card_sli swiper-slide">
@@ -1043,11 +1133,10 @@ Expertise and Experience:</h4>
           </div>
 
           <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="name">Jordan</h2>
+            <p class="description">Visa on arrival for many. Explore ancient wonders like Petra and vibrant markets.</p>
 
-            <button class="button">View More</button>
+            <button class="button">Know more</button>
           </div>
         </div>
       </div>
@@ -1057,9 +1146,57 @@ Expertise and Experience:</h4>
     <div class="swiper-pagination"></div>
   </div>
 </div>
-<section style="background-color: white; position: relative;">
-      <div class="container pt-5 pb-5">
-        <h1 class="display-5 text-center fw-semibold mb-5">See What Our Clients Say<br> About Us</h1>
+
+
+
+<div id="gallery" class="container">
+  
+  <div class="col-xs-12 no-pad">
+    <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">_Our customers memories</h1>
+    <h3>Image Gallery</h3>
+    <hr/>
+  </div>
+
+  <div id="gallery-box">
+    <div id="gallery-count"><span id="count">1</span> of <span id="total"></span></div>
+    <a id="gallery-link" href="https://loremflickr.com/800/600/dog?lock=10" target="_blank">
+      <div id="gallery-img">
+      </div>
+    </a>
+  </div>
+  <div class="gallery-thumbnails">
+    <div class="col-xs-12 no-pad">
+      <img id="1" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=10" />
+      <img id="2" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=20" />
+      <img id="3" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=30" />
+      <img id="4" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=40" />
+      <img id="5" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=50" />
+      <img id="6" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=60" />
+      <img id="7" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=70" />
+      <img id="8" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=80" />
+      <img id="9" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=90" />
+      <img id="10" class="img-responsive" src="https://loremflickr.com/800/600/dog?lock=100" />
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+  </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+<section style=" background-image: url(./assets/Images/9223821.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="container pt-2 pb-5">
+        <h1 class="display-6 text-lg-center text-start fw-semibold" style="color: #DF6951; font-family: Handlee, cursive;">See What Our Clients Say<br> About Us</h1>
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 col-11 d-flex justify-content-center">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -1070,7 +1207,7 @@ Expertise and Experience:</h4>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="card" style="width: 100%; background-color: gray; color: white;">
+                  <div class="card" style="width: 100%; background-color: transparent; color: black;">
                     <div class="card-body p-5 text-center">
                       <img src="./assets/Images/Ellipse 624.png" class="img-fluid" alt="testmonial_img">
                       <p class="card-text text-center">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
@@ -1079,7 +1216,7 @@ Expertise and Experience:</h4>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="card" style="width: 100%; background-color: gray; color: white;">
+                  <div class="card" style="width: 100%; background-color:transparent; color: black;">
                     <div class="card-body p-5 text-center">
                       <img src="./assets/Images/Ellipse 624.png" class="img-fluid" alt="testmonial_img">
                       <p class="card-text text-center">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
@@ -1088,7 +1225,7 @@ Expertise and Experience:</h4>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="card" style="width: 100%; background-color: gray; color: white;">
+                  <div class="card" style="width: 100%; background-color: transparent; color: black;">
                     <div class="card-body text-center p-5">
                       <img src="./assets/Images/Ellipse 624.png" class="img-fluid" alt="testmonial_img">
                       <p class="card-text text-center">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
@@ -1098,23 +1235,22 @@ Expertise and Experience:</h4>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+            </button>
+            
             </div>
           </div>
         </div>
       </div>
-      <div class="dec_03">
-        <img src="./assets/Images/dec_4_img.png" class="img-fluid" alt="">
-      </div>
+      
     </section>
 
-    <section class="footer_" id="footer_" style="position: relative; background-color: whitesmoke;">
+    <section class="footer_" id="footer_" style="background-color: whitesmoke;">
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-12">
@@ -1166,10 +1302,10 @@ Expertise and Experience:</h4>
           <p>Copyright @ TravelNexy  2024. All Rights Reserved</p>
         </div>
       </div>
-      <div class="dec_04">
-        <img src="./assets/Images/Footer img.png" class="img-fluid" alt="">
-      </div>
+      
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
