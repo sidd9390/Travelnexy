@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>TravelNexy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
     <style>
       .wrapper {
         background-color: #E1E2E2;
@@ -42,7 +46,7 @@
       .wrapper .track {
         display: flex;
         width: calc(150px * 10);
-        animation: scroll 15s 0.5s linear infinite;
+        animation: scroll 40s 0.5s linear infinite;
       }
     
     
@@ -55,10 +59,9 @@
           transform: translateX(calc(-150px * 5));
         }
       }
-    
-    
+
+
       .navbar_sec {
-        background-color: white;
         overflow-x: auto;
         /* Enable horizontal scrolling */
         white-space: nowrap;
@@ -72,9 +75,10 @@
       }
     
       .navbar_sec a {
-        color: black;
+        color: white;
         padding: 8px 10px;
         text-decoration: none;
+        font-weight: 700;
       }
     
       .dropdown_sec {
@@ -88,10 +92,11 @@
       .dropdown_sec .dropbtn {
         border: none;
         outline: none;
-        color: black;
+        color: white;
         padding: 8px 10px;
         background-color: inherit;
         margin: 0;
+        font-weight: 700;
       }
     
       .navbar_sec a:hover,
@@ -104,7 +109,7 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 160px;
+        min-width: 500px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
       }
@@ -126,533 +131,369 @@
       .dropdown_sec:hover .dropdown-content {
         display: block;
       }
+      #navsp1{
+        color: black;
+      }
+      #navsp2{
+        color: black;
+      }
+      #navsp3{
+        color: black;
+      }
+      #navsp4{
+        color: black;
+      }
+      #navsp5{
+        color: black;
+      }
+      #navsp1:hover{
+        color: #DF6951;
+      }
+      #navsp2:hover{
+        color: #DF6951;
+      }
+      #navsp3:hover{
+        color: #DF6951;
+      }
+      #navsp4:hover{
+        color: #DF6951;
+      }
+      #navsp5:hover{
+        color: #DF6951;
+      }
+
+      
+      
+      .bg_ch{
+        background-color: white;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      .bg_changed{
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        
+      }
+      .navbar-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.navbar-nav .dropdown-menu li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.navbar-nav .dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+#dom{
+  color: #DF6951;
+}
+#domestic{
+  display: block;
+}
+#International{
+  display: none;
+}
+#inter{
+ color: black;
+}
+
+#north{
+  color: #DF6951;
+}
+#south_india{
+  display: none;
+}
+#north_india{
+  display: block;
+}
+#south{
+ color: black;
+}
+
+    
+    
+    
     </style>
-  </head>
-  <body>
-    <section class="landing_page" id="landing_page">
-        <div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-                <div class="carousel-inner">
-                  <nav class="navbar navbar-expand-lg position-fixed nav_ch p-0 d-flex flex-column"
-                  style="z-index: 200; width: 100%; background-color: white; border-bottom: 0.5px solid gray;">
-                  <div class="container p-2" style="border-bottom: 0.5px solid black;">
-                    <a class="navbar-brand p-0" href="./index.html">
-                      <img src="./assets/Images/logo 1.png" class="img-fluid p-0" alt="logo" style="width: 100px;">
-                    </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center navigations" id="navbarNavDropdown">
-                          <ul class="navbar-nav">
-                            <li class="nav-item pe-4">
-                              <a class="nav-link active fw-bold" aria-current="page" href="./index.html" style="color: black;">Home</a>
-                            </li>
-                            <li class="nav-item pe-4">
-                              <a class="nav-link fw-bold" href="./about_us.html" style="color: black;">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle fw-bold pe-4" href="#" role="button" style="color: black;" data-bs-toggle="dropdown"
-                                      aria-expanded="false">
-                                      Services
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="./services.html">Domestic & International Flight Ticketing</a>
-                                      </li>
-                                      <li><a class="dropdown-item" href="./services.html">Domestic & International Holidays Packages</a>
-                                      </li>
-                                      <li><a class="dropdown-item" href="./services.html">Hotel Reservations</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Cruise Services</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Charter Services</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">MICE</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Events & Conferences</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Destination Weddings</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Visas Services</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Passport Assistance</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Travel Insurance</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Transportation</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Guided Tours</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">Group Travel</a></li>
-                                      <li><a class="dropdown-item" href="./services.html">incentive Tours</a></li>
-                                    </ul>
-                                    </li>
-                                    <li class="nav-item pe-4">
-                                      <a class="nav-link fw-bold" href="./Contact_us.html" style="color: black;">Contact Us</a>
-                                    </li>
-                                <div class="navbar_sec container d-lg-none d-flex justify-content-start p-0">
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">Flights
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
+    </head>
+    
+    <body>
+
+      <div style="position: fixed; z-index: 50; width: 100%;">
+        <nav class="navbar navbar-expand-lg bg_ch" id="naviid_1" style="border-bottom: 0.5px solid white;">
+          <div class="container">
+            <a class="navbar-brand p-0" href="./index.html">
+              <img src="./assets/Images/logo 1.png" class="img-fluid p-0" alt="logo" style="width: 110px;">
+            </a>
+            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="d-lg-none d-block" style="text-decoration: none;" id="navsp1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <h1 class="m-0 display-4"><i class="fa-solid fa-bars"></i></h1>
+            </a>
+            <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none" id="navbarNav">
+              <ul class="navbar-nav d-flex">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp2" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp3" href="./about_us.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp4" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="./Contact_us.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="#"><i class="fa-solid fa-phone-volume fs-5"></i></a>
+                  <ul class="dropdown-menu p-3">
+                    <li style="color: #DF6951;"><i class="fa-solid fa-phone"></i> Toll free number</li>
+                    <li><a href="#">123-456-7890</a></li>
+                    <li style="color: #DF6951;"><i class="fa-solid fa-mobile"></i> You can also call on:</li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li><a href="#">+91 984536237</a></li>
+                    <li style="color: #DF6951;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</li>
+                    <li><a href="#">+91 8823426834</a></li>
+                    <li style="color: #DF6951;"><i class="fa-regular fa-clock"></i> Business hours</li>
+                    <li><a href="#">10am - 6pm</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold me-3" id="navsp5" href="#"><i class="fa-regular fa-envelope fs-5"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">example@example.com</a></li>
+                    <li><a href="#">info@example.com</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+        
+      </div>
+
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <section class="landing_page" id="landing_page" style="position: relative;">
+      
+      <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators d-none">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="position: relative;">
+              <img src="./assets/Images/L_Backgroung.png" class="d-block w-100" style="height: 70vh; object-fit: cover;" alt="...">
+              <div class="overlay_text"
+                style="position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 100%;">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-8 col-10 text-center">
+                          <h5 class="display-4 fw-bold" style="color: white;"><a href="./index.html" style="text-decoration: none; color: #DF6951;">Home</a> > Services</h5>
+                          
+                                    
                                     </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">Trains
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
                                     </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">Buses
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
                                     </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">Cabs
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
                                     </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">Hotels
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
+                                    
+                                    
                                     </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">India
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
-                                    </div>
-                                  </div>
-                                  <div class="dropdown_sec">
-                                    <button class="dropbtn">World
-                                      <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
-                                    </div>
-                                  </div>
-                                  <a href="#home">Travel Insurance</a>
-                                </div>
-                            </ul>
-                            </div>
-                            </div>
-                    <div class="navbar_sec container d-lg-flex d-none justify-content-start p-0">
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">Flights
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">Trains
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">Buses
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">Cabs
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">Hotels
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">India
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <div class="dropdown_sec">
-                        <button class="dropbtn">World
-                          <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                      <a href="#home">Travel Insurance</a>
-                    </div>
-                    </nav>
-                  <div class="carousel-item active" style="position: relative;">
-                    <img src="./assets/Images/services_img.jpg" class="d-block w-100" style="height: 60vh; object-fit: cover;" alt="...">
-                    <div class="overlay_text" style="position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 100%;">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-8 text-center">
-                                <p style="color: white;">OUR</p>
-                                <h1 class="display-3 fw-bold" style="color: #DF6951;">Services</h1>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                
+        </div>
+        </div>
+
+        
+        </section>
+        
+        
+        
+        
+        
+        <section style="color: whitesmoke;" class="pt-5 pb-5">
+          <div class="container">
+            <h1 class="display-6 text-start fw-semibold Main_headings" style="color: #DF6951; font-family: Handlee, cursive;">_Our Seamless Services</h1>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">01.</span> Domestic & International Flight Ticketing</h1>
+                  <p style="color: black;">"Specializing in domestic and international flight ticketing, we offer competitive prices, diverse airlines, and personalized assistance for seamless travel. Our customer-centric approach prioritizes convenience, ensuring smooth bookings."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
                 </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">02.</span> Domestic & International Holidays Packages</h1>
+                  <p style="color: black;">"Discover our diverse domestic and international holiday packages, tailored to preferences and budgets, promising unforgettable travel experiences. Explore captivating destinations with seamless itineraries, curated by experts."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">03.</span> Hotel Reservations</h1>
+                  <p style="color: black;">"Secure hassle-free accommodations with our hotel reservation services. Choose from worldwide options, tailored to preferences and budget. Our user-friendly platform ensures seamless bookings for a comfortable stay."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">04.</span> Cruise Services</h1>
+                  <p style="color: black;">"Embark on unforgettable journeys with our premium cruise services. Experience luxury and adventure aboard top-tier cruise lines across diverse destinations, ensuring seamless bookings and personalized itineraries."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">05.</span> Charter Services</h1>
+                  <p style="color: black;">"Experience bespoke travel with our tailored charter services. For business or leisure, enjoy personalized private flights, yachts, and transportation. Our team ensures seamless arrangements, flexibility, and luxury, ensuring unparalleled comfort."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">06.</span> Meetings, Incentives, Conferences and Exhibitions
+                  </h1>
+                  <p style="color: black;">"Elevate events with our MICE services. From meetings to conferences and exhibitions, our expert team delivers seamless solutions. Tailored planning ensures impactful gatherings."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">07.</span> Events & Conferences</h1>
+                  <p style="color: black;">"Experience flawless event execution with our comprehensive management services. Our dedicated team ensures impactful and memorable experiences for corporate conferences, product launches, and special events."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">08.</span> Destination Weddings</h1>
+                  <p style="color: black;">"Craft everlasting memories with our bespoke destination wedding services. From beach ceremonies to mountaintop nuptials, we specialize in unforgettable weddings worldwide, tailored to your vision."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">09.</span> Visas Services</h1>
+                  <p style="color: black;">"Facilitating hassle-free travel, our visa services cater to diverse needs, ensuring smooth processing for various destinations. Trust our experienced team for reliable and comprehensive assistance."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">10.</span> Passport Assistance</h1>
+                  <p style="color: black;">"Simplify passport processes with our comprehensive assistance services. Expert guidance ensures smooth applications, renewals, or expedited services, guaranteeing efficiency for first-timers or renewals."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">11.</span> Travel Insurance</h1>
+                  <p style="color: black;">"Ensure travel safety with our tailored insurance solutions. Comprehensive coverage protects against unforeseen events, offering peace of mind. Expert team provides personalized plans prioritizing safety."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">12.</span> Transportation</h1>
+                  <p style="color: black;">"Experience tailored transportation solutions for your travel needs. Our comprehensive services ensure convenience and reliability, from airport transfers to private chauffeur services."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">13.</span> Guided Tours</h1>
+                  <p style="color: black;">"Embark on enriching adventures with our meticulously curated guided tours. Expert-led experiences provide immersive insights into captivating destinations worldwide, ensuring a seamless and enriching travel experience."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">14.</span> Group Tours</h1>
+                  <p style="color: black;">"Explore the world together with our specially crafted group tours. Tailored for shared experiences, our expertly planned itineraries ensure captivating destinations and unforgettable memories."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 m-2 mb-lg-5 mb-2">
+                <div class="p-4" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">
+                  <h1 style="color: black;" class="display-6 fs-2 fw-semibold"><span class=" display-3 fw-bold" style="color: #DF6951;">15.</span> Incentives Tours</h1>
+                  <p style="color: black;">"Inspire your team with our bespoke incentive tours. Meticulously designed for unique and luxurious experiences, our programs motivate, engage, and create unforgettable memories."</p>
+                  <img src="./assets/Images/ser_img.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 m-2 mt-lg-5 mt-2">
                 
-              </div>
-        </div>
 
-    </section>
+              </div>
+            </div>
+            
 
-    <section id="services_1 " class="services_1">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <h1 class="display-6 fw-bold text-center pb-2" style="color: #DF6951;">Our Curated Travel Services</h1>
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
           </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Domestic & International Flight Ticketing</h6>
-              <p>"Specializing in domestic and international flight ticketing, we offer competitive pricing, diverse airline options, and personalized assistance for seamless travel. Our customer-centric approach prioritizes convenience and reliability, ensuring smooth and efficient bookings. Trust our expert team to handle flight arrangements and provide hassle-free ticketing services tailored to your preferences."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Domestic & International Holidays Packages</h6>
-              <p>"Explore our diverse range of domestic and international holiday packages. Tailored to suit various preferences and budgets, our offerings promise unforgettable travel experiences. Discover captivating destinations and seamless itineraries curated by our expert team. From exotic locales to cultural landmarks, embark on a journey of adventure and relaxation with our meticulously crafted holiday packages."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Hotel Reservations</h6>
-              <p>"Secure your accommodations hassle-free with our comprehensive hotel reservation services. Choose from a wide array of hotels worldwide, tailored to your preferences and budget. Our user-friendly platform and expert assistance ensure seamless booking experiences, guaranteeing comfort and convenience throughout your stay. Trust us to handle your hotel reservations efficiently, providing you with a perfect place to relax and unwind during your travels."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Cruise Services</h6>
-              <p>"Embark on unforgettable journeys with our premium cruise services. Experience luxury and adventure aboard top-tier cruise lines across diverse destinations. Our expert team ensures seamless bookings, personalized itineraries, and exceptional onboard experiences. From breathtaking ocean views to world-class amenities, indulge in a perfect blend of comfort and exploration with our comprehensive cruise services."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Charter Services</h6>
-              <p>"Unlock bespoke travel experiences with our tailored charter services. Whether for business or leisure, we offer personalized solutions for private flights, yachts, and transportation needs. Our dedicated team ensures seamless arrangements, flexibility, and luxury, providing unparalleled comfort and convenience. Experience a bespoke journey curated to your preferences with our premium charter services."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Meetings, Incentives, Conferences and Exhibitions</h6>
-              <p>"Elevate your events with our Meetings, Incentives, Conferences, and Exhibitions (MICE) services. From meticulously planned meetings to engaging conferences and captivating exhibitions, our expert team delivers seamless and impactful event solutions. Tailored to your specific needs, we offer comprehensive planning, logistics, and execution to ensure successful and memorable gatherings. Trust us to create unforgettable experiences that inspire, motivate, and leave a lasting impression."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Events & Conferences</h6>
-              <p>"Experience flawless event execution with our comprehensive event and conference management services. Our dedicated team offers end-to-end solutions, from conceptualization to seamless execution, ensuring impactful and memorable experiences. Whether it's a corporate conference, product launch, or special event, we meticulously plan every detail to exceed expectations. Trust us to deliver professionalism, innovation, and success for your next event or conference."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Destination Weddings</h6>
-              <p>"Create everlasting memories with our bespoke destination wedding services. From dreamy beach ceremonies to picturesque mountaintop nuptials, we specialize in crafting unforgettable weddings in stunning locations worldwide. Our expert team handles every detail, from venue selection to logistics, ensuring a seamless and magical experience for you and your guests. Trust us to turn your dream destination wedding into a reality, tailored to your unique vision and preferences."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Visas Services</h6>
-              <p>"Facilitating hassle-free travel, our visa services cater to diverse needs, ensuring smooth and efficient visa processing for various destinations. With expert guidance and personalized assistance, we navigate the complexities of visa applications, offering support throughout the entire process. Trust our experienced team to provide reliable and comprehensive visa services, ensuring you embark on your journey stress-free."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Passport Assistance</h6>
-              <p>"Streamline your passport application process with our comprehensive passport assistance services. Our expert team guides you through the application, renewal, or expedited passport services, ensuring a smooth and efficient experience. Whether for first-time applicants or renewals, rely on our expertise for accurate guidance and support throughout the passport acquisition journey."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Travel Insurance</h6>
-              <p>"Safeguard your travel experiences with our tailored travel insurance solutions. Our comprehensive coverage options offer protection against unforeseen events, ensuring peace of mind during your journeys. From medical emergencies to trip cancellations, our expert team provides personalized insurance plans that cater to your specific needs, prioritizing your safety and security while exploring the world."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Transportation</h6>
-              <p>"Experience seamless transportation solutions tailored to your travel needs. Our comprehensive services offer a range of transportation options, ensuring convenience and reliability throughout your journey. From airport transfers to private chauffeur services, trust our expert team to provide efficient and comfortable transportation arrangements, enhancing your travel experience."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Guided Tours</h6>
-              <p>"Embark on enriching adventures with our meticulously curated guided tours. Our expert-led experiences offer immersive insights into captivating destinations worldwide. From cultural landmarks to hidden gems, our tours are tailored to provide an unforgettable journey filled with knowledge, discovery, and personalized attention, ensuring a seamless and enriching travel experience."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_2 " class="services_2" style="background-color: whitesmoke;">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 d-flex align-items-center order-md-0 order-1">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Group Tours</h6>
-              <p>"Discover the world together with our specially crafted group tours. Tailored for shared experiences, our expertly planned group tours offer seamless itineraries and captivating destinations. From cultural explorations to thrilling adventures, our tours cater to diverse interests, ensuring unforgettable moments and lasting memories for all participants."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 text-center order-md-1 order-0">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services_3" class="services_3">
-      <div class="container mt-5 pt-4 pb-4 mb-5">
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img src="./assets/Images/service_01.jpg" style="width: 500px; border-radius: 8px;" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div>
-              <h6 class="display-6 fs-4 fw-semibold">Incentives Tours</h6>
-              <p>"Reward and inspire your team with our bespoke incentive tours. Our meticulously designed programs offer unique and luxurious travel experiences as a token of appreciation. From exclusive destinations to personalized itineraries, our incentive tours are crafted to motivate, engage, and create unforgettable memories for your team."</p>
-              <div class="landing_page_sub_btn ps-0">
-                <a href="#">
-                  View Packages
-                </a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
 
-
-
+    
 
     
 
@@ -663,66 +504,85 @@
 
 
 
-    <section class="footer_" id="footer_" style="position: relative; background-color: whitesmoke;">
-        <div class="container pt-5 pb-5">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <img src="./assets/Images/logo 1.png" class="img-fluid pb-3" alt="logo" style="width: 180px;">
-              <p class="pe-4">Travel streamlines company payments, enhancing financial oversight and simplifying expense tracking.</p>
-              <div class="media_links" style="display: flex; flex-direction: row;">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-infinity"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    <section class="footer_" id="footer_" style="background-color: whitesmoke;">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="./assets/Images/logo 1.png" class="img-fluid pb-3" alt="logo" style="width: 180px;">
+            <p class="pe-4">Travel streamlines company payments, enhancing financial oversight and simplifying expense tracking.</p>
+            <div class="media_links" style="display: flex; flex-direction: row;">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-solid fa-infinity"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="row">
+              <div class="col-6">
+                <div class="company">
+                  <a href="#" class="fw-bold" style="font-size: 20px;"><p>Company</p></a>
+                  <a href="#"><p>About Us</p></a>
+                  <a href="#"><p>Careers</p></a>
+                  <a href="#"><p>Blog</p></a>
+                  <a href="#"><p>Contact Us</p></a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="Destinations">
+                  <a href="#" class="fw-bold" style="font-size: 20px;"><p>Destinations</p></a>
+                  <a href="#"><p>Maldives</p></a>
+                  <a href="#"><p>Los Angelas</p></a>
+                  <a href="#"><p>Las Vegas</p></a>
+                  <a href="#"><p>Torronto</p></a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="row">
-                <div class="col-6">
-                  <div class="company">
-                    <a href="#" class="fw-bold" style="font-size: 20px;"><p>Company</p></a>
-                    <a href="#"><p>About Us</p></a>
-                    <a href="#"><p>Careers</p></a>
-                    <a href="#"><p>Blog</p></a>
-                    <a href="#"><p>Contact Us</p></a>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="Destinations">
-                    <a href="#" class="fw-bold" style="font-size: 20px;"><p>Destinations</p></a>
-                    <a href="#"><p>Maldives</p></a>
-                    <a href="#"><p>Los Angelas</p></a>
-                    <a href="#"><p>Las Vegas</p></a>
-                    <a href="#"><p>Torronto</p></a>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <a href="#" class="fw-bold" style="font-size: 20px; text-decoration: none; color: black;"><p>Join Our Newsletter</p></a>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" style="background-color: #DF6951; color: black; border-radius: 5px;" type="button" id="button-addon2">Subscribe</button>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <a href="#" class="fw-bold" style="font-size: 20px; text-decoration: none; color: black;"><p>Join Our Newsletter</p></a>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" style="background-color: #DF6951; color: black; border-radius: 5px;" type="button" id="button-addon2">Subscribe</button>
-              </div>
-              <p>*  Will send you weekly updates for your better
-                tour packages.</p>
-                <p>Website: <a href="#">www.travelnexy.com</a></p>
+            <p>*  Will send you weekly updates for your better
+              tour packages.</p>
+            <p>Website: <a href="#">www.travelnexy.com</a></p>
             <p>Email: info@travelnexy.com | travelnexy@gmail.com</p>
             <p>Phone: 703 200 5333 | 88869 89898 | 81258 04014</p>
-            </div>
-          </div>
-          <div class="text-center pt-3 pb-2">
-            <p>Copyright @ TravelNexy  2024. All Rights Reserved</p>
           </div>
         </div>
-        <div class="dec_04">
-          <img src="./assets/Images/Footer img.png" class="img-fluid" alt="">
+        <div class="text-center pt-3 pb-2">
+          <p>Copyright @ TravelNexy  2024. All Rights Reserved</p>
         </div>
-      </section>
+      </div>
+      
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-    
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script_about_us.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
