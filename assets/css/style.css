@@ -417,7 +417,7 @@ backdrop-filter: blur(5.6px);
 }
 .slider-wrapper1 .image-list1 {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   gap: 18px;
   font-size: 0;
   list-style: none;
@@ -534,7 +534,7 @@ backdrop-filter: blur(5.6px);
 }
 .slider-wrapper2 .image-list2 {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   gap: 18px;
   font-size: 0;
   list-style: none;
