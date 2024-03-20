@@ -36,7 +36,7 @@ backdrop-filter: blur(5.6px);
 }
 .landing_page_sub_btn a:hover{
   text-decoration: none;
-  color: white;
+  color: #DF6951;
   background: transparent;
 
   transition: 0.5s;
